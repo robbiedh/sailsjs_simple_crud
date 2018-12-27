@@ -1,0 +1,18 @@
+
+
+<h3>Input Data Buku</h3>
+<form method="POST" action="/update_buku">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Judul Buku </label>
+    <input hidden value="<%=  buku.id %>"  name="id" />
+    <input type="text" value="<%=  buku.judul %>" name="judul" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Judul Buku">
+   
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Keterangan</label>
+    <input type="text" value="<%=  buku.keterangan %>" name="keterangan" class="form-control" id="exampleInputPassword1" placeholder="Keterangan Buku ">
+  </div>
+ 
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
